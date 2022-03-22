@@ -1,16 +1,13 @@
 
 
-function SeuNome({setNome}){
+export default function SeuNome({ setNome }) {
 
-    
-
-    return(
+    return (
         <div>
             <p>Digite seu nome</p>
-            <input type="text" placeholder="Qual o seu nome" onChange={(e) => setNome(e.target.value)}/>
+            <input type="text" placeholder="Qual o seu nome" onChange={(e) => setNome(e.target.value)} />
 
         </div>
     )
 }
 
-export default SeuNome

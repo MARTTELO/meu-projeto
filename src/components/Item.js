@@ -16,7 +16,7 @@ Item.propTypes = {
 
 Item.defaultProps = {
     marca: 'Faltou a marca',
-    ano_lancamento:0
+    ano_lancamento: 0
 
 }
 

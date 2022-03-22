@@ -5,7 +5,7 @@ function Condicional(){
     const [email, setEmail] = useState();
     const [userEmail, setUserEmail] = useState();
 
-    function EnvairEmail(e){
+    function EnvairEmail(e){ 
         e.preventDefault();
         setUserEmail(email);
     }
@@ -21,7 +21,8 @@ function Condicional(){
                 <input type="email" id="email" name="email"placeholder="Insira se E-mail"onChange={(e)=> setEmail(e.target.value)} />
             </form>
             <button type="submit" onClick={(EnvairEmail)}>Envair Email</button>
-            {userEmail && (
+            
+            {userEmail && ( // tesste condicional, se existir userEmail, crie a div e imprima o valor
                 <div>
                     <p>O email do usuário é: {userEmail}</p>
                     <button onClick={limparEmail}>Limpar Email</button>
